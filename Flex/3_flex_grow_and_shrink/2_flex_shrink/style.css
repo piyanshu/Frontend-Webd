@@ -1,0 +1,25 @@
+#container{
+    height: 500px;
+    width: 300px;
+    background-color: lightgrey;
+    display:flex;
+}
+#container div{
+    height: 200px;
+    width: 200px;
+}
+/* With the help of flex-shrink we can decrease the size of an element when the size of container is less than size of both divs */
+#div1{
+    background-color: blue;
+    /* The width of the container is 300px and total widths of div1 and div2 are 400px i.e. div1 and div2 has 100px more widths than container */
+    /* Total parts of flex-shrink of both divs are 5  */
+    /* div1 has 4 parts, therefore (4/5)*100 */
+    /* so div1 has width = 200 - 80 = 120 */
+    flex-shrink: 4;
+}
+#div2{
+    background-color: red;
+    /* div2 has 1 part, therefore (1/5)*100 */
+    /* so div1 has width = 200 - 20 = 180 */
+    flex-shrink: 1;
+}

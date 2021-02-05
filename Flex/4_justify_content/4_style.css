@@ -1,0 +1,28 @@
+#container{
+    height: 500px;
+    width: 500px;
+    background-color: lightgrey;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+/* Justify content has 5 values
+flex-start = All the elements will going towards start
+flex-end = All the elements will going towards end
+center = All the elements will going towards center
+space between = All elements can have equal space between them
+space around = All elements can equal space around them
+*/
+#container div{
+    height: 100px;
+    width: 100px;
+}
+#div1{
+    background-color: blue;
+}
+#div2{
+    background-color: red;
+}
+#div3{
+    background-color: green;
+}

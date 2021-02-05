@@ -1,0 +1,44 @@
+<!-- Forms are used to collect the data and pass it further, but it can pass the data in the form of name="value"  -->
+<!-- value - the value which can be enter in the input field by the user -->
+<!-- name - We have to mention the name attribute for every input field jisse ki humlog ye pta lag sake ki value jo hai vo hai kiski -->
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <form>
+            <div>
+                <!-- Hume batana hoga ki ye jo label hai vo konse input ke liye hai to hum uske liye for attribute ko use karte hain -->
+                <label for="username">Username</label>
+                <br>
+                <input type="text"id="username"name="username"required>
+            </div>
+            <div>
+                <label for="email">email</label>
+                <br>
+                <input type="email"id="email"placeholder="abc@example.com"name="email"required>
+            </div>
+            <div>
+                <label for="country">Country</label>
+                <br>
+                <!-- When we set disabled the value of that input field cant be changed -->
+                <input type="country"id="country"name="country"value="India"disabled required>
+            </div>
+            <div>
+                <label for="range">email</label>
+                <br>
+                <input type="range"id="range"name="range"min="10"max="50"step="10"required>
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <br>
+                <input type="password"name="password"id="password"required>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
+        </form>
+    </body>
+</html>
+<!-- Some other input types are email, time, date, number, range, url -->

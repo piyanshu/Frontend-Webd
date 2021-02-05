@@ -1,0 +1,30 @@
+#container{
+    height: 500px;
+    width: 500px;
+    background-color: lightgrey;
+    display:flex;
+    align-items: flex-start;        /* default value - stretch*/
+}
+/* align items will work along cross axes 
+cross axes = The axes which is perpendicular to main axes
+*/
+/*
+flex-start = All the elements will going towards start
+flex-end = All the elements will going towards end
+center = All the elements will going towards center
+stretch = It tries to stretch the elements along cross axes. To see the effect set heights of div to auto
+baseline - It will align the items around baseline
+*/
+#container div{
+    height: 100px;
+    width: 100px;
+}
+#div1{
+    background-color: blue;
+}
+#div2{
+    background-color: red;
+}
+#div3{
+    background-color: green;
+}

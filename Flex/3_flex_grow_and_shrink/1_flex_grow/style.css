@@ -1,0 +1,25 @@
+#container{
+    height: 500px;
+    width: 500px;
+    background-color: lightgrey;
+    display:flex;
+}
+#container div{
+    height: 200px;
+    width: 200px;
+}
+/* With the help of flex-grow we can increase the size of an element when the size of container is left */
+#div1{
+    background-color: blue;
+    /* The width of the container is 500px and total widths of div1 and div2 are 400px and 100px left of container */
+    /* Total parts of flex-grow of both divs are 5  */
+    /* div1 has 4 parts, therefore (4/5)*100 */
+    /* so div1 has width = 200 + 80 = 280 */
+    flex-grow: 4;
+}
+#div2{
+    background-color: red;
+    /* div2 has 1 part, therefore (1/5)*100 */
+    /* so div2 has widths = 200 + 20 = 220 */
+    flex-grow: 1;
+}

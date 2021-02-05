@@ -1,0 +1,7 @@
+1. block - The elments which occupies the complete width and starts with a new line
+2. inline - The elements which starts in a same line
+div is a block tag
+span is an inline tag
+
+semantic tags - These type of tags can be used to write the code in a well structured way. 
+some semantic tags are header, main, footer, aside, nav.

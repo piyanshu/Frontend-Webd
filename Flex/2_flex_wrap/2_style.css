@@ -1,0 +1,31 @@
+#container{
+    background-color:lightgrey;
+    height:75vh;
+    width:40vw;
+    display: flex; 
+    flex-direction: row;
+    /* When we set the value as nowrap it tries to wrap only in one row and column */
+    flex-wrap: nowrap;  /* By default no-wrap*/
+}
+#container div{
+    /* we have mentioned height and width of each div is 200px but it cannot take 200px
+    because flex always try to place the elements in one row or one column 
+    so to prevent this we can use flex-wrap. */
+    height: 200px;
+    width:200px;
+}
+#div1{
+    background-color: cyan;
+}
+#div2{
+    background-color: red;
+}
+#div3{
+    background-color: grey;
+}
+#div4{
+    background-color: brown;
+}
+#div5{
+    background-color: pink;
+}

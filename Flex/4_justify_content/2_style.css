@@ -1,0 +1,33 @@
+#container{
+    height: 500px;
+    width: 500px;
+    background-color: lightgrey;
+    display:flex;
+    justify-content: flex-end;
+}
+/* Justify content will work along main axes 
+main axes of row -->
+main axes of row-reverse <--
+main axes of column = vertically downwards
+main axes of row = vertically upwards
+*/
+/*
+flex-start = All the elements will going towards start
+flex-end = All the elements will going towards end
+center = All the elements will going towards center
+space between = All elements can have equal space between them
+space around = All elements can equal space around them
+*/
+#container div{
+    height: 100px;
+    width: 100px;
+}
+#div1{
+    background-color: blue;
+}
+#div2{
+    background-color: red;
+}
+#div3{
+    background-color: green;
+}

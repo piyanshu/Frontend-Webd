@@ -1,0 +1,11 @@
+Browser http Get ya http Post request karta hai server se 
+http ek protocol hai jo do systems ko apas me communicate karne me madad karta hai and used for other purposes
+to yaha par http browser aur server ko communicate karne madad karta hai
+Request method  - get and Post
+1. get - i. We are requesting some information from server and server can gives us that information.
+        ii. We dont want to change any information in the database so this type of request is get request
+        iii. These types of requests are not secure. jab kabhi bhi information form ke zariye pass karate hain
+            to get request us information ko url ke andar add kar deti hai
+
+2. Post - i. When we send some data to server and we want to change something in database
+        ii. These types of requests are secure

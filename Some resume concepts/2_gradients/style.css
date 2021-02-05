@@ -1,0 +1,18 @@
+/* starting point of the first color is 0% and last color is 100% */
+/* For setting up any gradient we have two use atleast two colors */
+#container{
+    height: 200px;
+    width: 200px;
+    margin: 40px;
+    border: 1px solid black;
+    background-image: linear-gradient(to top right,red, blue 50%);
+
+    /* instead of % we can set them in px */
+    /* background:linear-gradient(red, blue 80px); */
+
+    /* Instead of exact direction we can mention them in degrees */
+    /* background: linear-gradient(120deg,red, blue 50%); */
+
+    /* background: repeating-linear-gradient(red, blue); */
+    /* background: radial-gradient(red, blue); */
+}

@@ -1,0 +1,21 @@
+<!-- This is an internal Javascript -->
+
+<!-- Whatever event we want to handle use addEventListener -->
+<html>
+    <head>
+
+    </head>
+    <body>
+        <button id="btn">Say Hello!!</button>
+        <script type="text/javascript">
+            var helloButton = document.getElementById('btn');
+// In function addEventListener we pass name of the event and event handler
+// Event handler - Whenever the event is happen, this function will execute
+            helloButton.addEventListener('click', function(){
+                alert('say Hello!!');
+            });
+        </script>
+    </body>
+</html>
+
+<!-- We cannot add script tag in head because we dont know what is 'btn' and code is compiled line by line-->

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <!-- This is the external css -->
+        <!-- inline css has more preference than both internal and external -->
+        <!-- But in case of internal and external css..scanning takes place from top to bottom
+        and if we apply same multiple css rules the rule which is at the bottom that rule is applicable -->
+        <style>
+            p{
+                color: blue;
+                font-size: 40px;
+            }
+        </style>
+        <link rel="stylesheet" href="4_style.css">
+    </head>
+    <body>
+        <p style="color: red;">Sample para 1</p>
+        <p>Sample para 2</p>
+        <p>Sample para 3</p>
+    </body>
+</html>

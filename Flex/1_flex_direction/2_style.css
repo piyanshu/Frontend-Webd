@@ -1,0 +1,42 @@
+/* With the help of flex we can place any element with respect to its parent */
+#container{
+    background-color:lightgrey;
+    height:75vh;
+    width:30vw;
+    display: flex; 
+    /* When we do not mention any fex direction the direction is row by default*/
+    flex-direction: row-reverse;
+}
+/* The directions are
+row --> 
+row-reverse <--
+column - vertically downwards 
+column-reverse - vertically upwards
+elements can placed from tail to head
+tail = start
+head = end
+*/
+/*
+order of the elements is always 0 by default
+*/
+#container div{
+    /* we have mentioned height and width of each div is 200px but it cannot take 200px
+    because flex always try to place the elements in one row or one column 
+    so to prevent this we can use flex-wrap. */
+    height: 200px;
+    width:200px;
+}
+#div1{
+    background-color: cyan;
+}
+#div2{
+    background-color: red;
+}
+#div3{
+    background-color: grey;
+    order: 1;
+}
+#div4{
+    background-color: brown;
+    order: -1;
+}
